@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toc Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="TicToc">
+        <nav>
+            <h1>Tic tac toe Game</h1>
+        </nav>
+        <div id="gameContainer">
+            <div class="container">
+                <div class="box bt-0 bl-0"><span class="boxText"></span></div>
+                <div class="box bt-0"><span class="boxText"></span></div>
+                <div class="box bt-0 br-0"><span class="boxText"></span></div>
+                <div class="box bl-0"><span class="boxText"></span></div>
+                <div class="box"><span class="boxText"></span></div>
+                <div class="box br-0"><span class="boxText"></span></div>
+                <div class="box bl-0 bb-0"><span class="boxText"></span></div>
+                <div class="box bb-0"><span class="boxText"></span></div>
+                <div class="box bb-0 br-0"><span class="boxText"></span></div>
+            </div>
+            <div class="gameInfo">
+                <h1>Welcome to MY Tic toc Toe Game</h1>
+
+                <!-- <section class="info">Player<span class="turn">X</span>'s turn</section> -->
+                <section class="info">Turn for X
+                </section>
+                <div class="btn">
+                    <button id="restart">Restart</button>
+                </div>
+                <div class="imgBox">
+                    <img src="./excited.gif">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- calculater -->
+    <div class="container1">
+        <h1>Calculator</h1>
+        <div class="container2">
+            <input type="text" id="screen">
+            <table>
+                <tr>
+                    <td><button onclick="num('7')">7</button></td>
+                    <td><button onclick="num('8')">8</button></td>
+                    <td><button onclick="num('9')">9</button></td>
+                    <td><button onclick="num('/')">/</button></td>
+                    <td><button class="btn_red" onclick="clearinput()">AC</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="num(4)">4</button></td>
+                    <td><button onclick="num(5)">5</button></td>
+                    <td><button onclick="num(6)">6</button></td>
+                    <td><button onclick="num('*')">*</button></td>
+                    <td><button onclick="num('%')">%</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="num(1)">1</button></td>
+                    <td><button onclick="num(2)">2</button></td>
+                    <td><button onclick="num(3)">3</button></td>
+                    <td><button onclick="num('+')">+</button></td>
+                    <td><button onclick="num('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="num(0)">0</button></td>
+                    <td><button onclick="num(00)">00</button></td>
+                    <td><button onclick="reset()">X</button></td>
+                    <td><button onclick="num('.')">.</button></td>
+                    <td><button class="btn_blue" onclick="result()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- </div> -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
